@@ -1275,16 +1275,16 @@ document.addEventListener('DOMContentLoaded', function() {
   loadTestimonials();
   loadImpactSlider();
   renderPartnerLogos();
-  adjustIframeHeight();
+  /* adjustIframeHeight(); */
 });
 
-function adjustIframeHeight() {
+/* function adjustIframeHeight() {
   function sendHeight() { window.parent.postMessage({ type: 'setHeight', height: document.body.scrollHeight }, '*'); }
   sendHeight();
   new MutationObserver(sendHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
   window.addEventListener('resize', sendHeight);
   setInterval(sendHeight, 1000);
-}
+} */
 </script>
 
 </body>
