@@ -847,6 +847,93 @@ body.modal-open {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+footer{
+  width: 100%;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  padding-left: 48px;
+  padding-right: 48px;
+  background: #f1f3f4;
+  text-align: center;
+}
+
+.footer-inner {
+  display: inline-block;
+  text-align: center;
+  background: #f1f3f4;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+    .footer-inner {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+ 
+.footer-welcome {
+  max-width: 860px;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #1d1d1f;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+ 
+.footer-tagline {
+  padding-top: 12px;
+  font-family: 'Tiro Devanagari Marathi', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 28px;
+}
+ 
+.footer-copyright {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1d1d1f;
+  margin-bottom: 28px;
+}
+ 
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+ 
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 6px;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+ 
+.footer-social a:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+ 
+.footer-social img {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: block;
+}
+
 </style>
 </head>
 
@@ -1005,6 +1092,28 @@ body.modal-open {
     </div>
   </div>
 </section>
+
+<footer>
+<div class="footer-inner">
+  <p class="footer-welcome">
+    We extend a warm welcome to everyone to join our connected Marathi community. Together, let's extend a helping hand to others and contribute to creating a healthy and peaceful society worldwide.
+  </p>
+  <p class="footer-tagline">एक संकल्प मराठी जपण्याचा</p>
+  <p class="footer-copyright">Copyright © <span id="currentYear"></span> Sankalp - All Rights Reserved.</p>
+ 
+  <div class="footer-social">
+    <a href="https://www.instagram.com/sankalpmarathimandal" target="_blank" aria-label="Instagram">
+      <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAxMgeaTTxkifd69NlW6ULdanAUPVMJXwbCwyRElP0KmnYcUBnYimHmgY9Ja3len5px--Zz04k80NCJ8_Rj6Egwy_4YkXPZriCWwDO_Y52uPfX2I1H6G5alJz4OK87gbN-YEj-WfyVvm11JTjRrNKv_7zX9cSTDUoU9jmK5bfF4NBIAcYbNt5ECRfP8FptlyII-Gk34ucGp0PIwhw" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/share/g/18UEkDGmBE/" target="_blank" aria-label="Facebook">
+      <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUArB0RuRrxk6oAp0WrTT_F_7TQ6QRj9jhQ7D-mo5Z8ve5JX5IQelD46znP3Ujvv6MzllRRvgrmdM-9QPb49nFShkRAJGC5032icTWdzxoZORIJDKQze7Bb5zhIXBtU1bcRaANlGH02fJW3s6xafjDMuYJqgMp-0_ab1KK0aIcjJ-w8CmfVuSvKOILzUVIiGiMm8Grdh7H6t6eZHPand" alt="Facebook">
+    </a>
+    <a href="https://www.youtube.com/@sankalpmarathimandal4296" target="_blank" aria-label="YouTube">
+      <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCKAg9QJu3lU047NPtQomAkpPaeqQMWT8hPQH7-YWIv-pq8GvXo5fgMVDfiSSDYH5i4r_2LRiQvCsAGa4em-JTFviM3WRGiPaZ1DG1s0GH16vgPxZanMf6AS9KcGSP7FOZwrPv_urxItI43oKiYEKinSGrAbFR8ESKVEAjWvkGHjx0xJl1lFZzTnCWRwHpli6RaoAFcWtTt_O0mSKSM" alt="YouTube">
+    </a>
+  </div>
+  </div>
+</footer>
 
 <!-- =====================================================
      JAVASCRIPT
